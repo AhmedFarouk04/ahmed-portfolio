@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ahmed Farouk — Backend .NET Developer specializing in Clean Architecture, CQRS, and AI-integrated systems."
+    />
+
+    <meta property="og:title" content="Ahmed Farouk — Backend .NET Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Ahmed Farouk, .NET Developer specializing in Clean Architecture."
+    />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:type" content="website" />
+
+    <title>Ahmed Farouk — Backend .NET Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body>
+    <div id="scroll-bar"></div>
+
+    <div class="c-dot" id="cDot"></div>
+    <div class="c-ring" id="cRing"></div>
+
+    <button
+      id="btt"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+
+    <nav>
+      <div class="nav-logo">Ahmed<span>.</span>dev</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-orb1"></div>
+      <div class="hero-orb2"></div>
+
+      <div class="hero-left">
+        <h1 class="hero-name">
+          <span class="n1">Ahmed</span>
+          <span class="n2">Farouk.</span>
+        </h1>
+
+        <div class="hero-role">Back-End .NET Developer</div>
+
+        <p class="hero-desc">
+          Specialized in building
+          <strong>scalable, production-ready systems</strong> with
+          <strong>Clean Architecture</strong> and <strong>CQRS</strong>.
+          Experienced in RESTful APIs, microservices with RabbitMQ, and
+          AI-integrated platforms deployed on Azure.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects ↓</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num" data-count="15" data-suf="+">0</div>
+            <div class="stat-lbl">Projects Built</div>
+          </div>
+          <div>
+            <div class="stat-num" data-count="91" data-suf="%">0</div>
+            <div class="stat-lbl">GPA Score</div>
+          </div>
+          <div>
+            <div class="stat-num" data-count="8">0</div>
+            <div class="stat-lbl">Certifications</div>
+          </div>
+          <div>
+            <div class="stat-num" data-count="5" data-suf="+">0</div>
+            <div class="stat-lbl">Tech Stacks</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <div class="photo-ring"></div>
+          <img
+            src="/photo.jpeg"
+            alt="Ahmed Farouk"
+            onerror="
+              this.style.background = 'linear-gradient(135deg,#101320,#151829)';
+              this.removeAttribute('src');
+            "
+          />
+          <div class="corner-tl"></div>
+          <div class="corner-br"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div id="about">
+      <div class="sw">
+        <div class="eyebrow rv">About Me</div>
+        <h2 class="sec-title rv d1">Who I <em>Am</em></h2>
+        <p class="about-p rv d2">
+          I'm a
+          <strong>Computer Science graduate from Suez Canal University</strong>
+          (Class of 2025, GPA: Excellent 91.58%), passionate about building
+          robust backend systems that scale.
+        </p>
+        <p class="about-p rv d3">
+          My core expertise lies in
+          <strong>.NET 8, Clean Architecture, and Domain-Driven Design</strong>.
+          I've built everything from event-driven booking platforms to real-time
+          chat systems, always with a focus on maintainability and performance.
+        </p>
+        <p class="about-p rv d4">
+          Beyond .NET, I have hands-on experience with
+          <strong>AI/ML (BERT, GPT, Azure OpenAI)</strong>, Node.js APIs, and
+          full-stack development — giving me a holistic understanding of modern
+          software systems.
+        </p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section id="skills">
+      <div class="sw">
+        <div class="eyebrow">Technical Skills</div>
+        <h2 class="sec-title">My <em>Arsenal</em></h2>
+        <p class="sec-sub">
+          Technologies and tools I use to build production-grade systems.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card rv d1">
+            <div class="sk-icon">⚡</div>
+            <div class="sk-title">.NET Ecosystem</div>
+            <div class="tags">
+              <span class="tag hi">ASP.NET Core</span
+              ><span class="tag hi">C#</span>
+              <span class="tag hi">Clean Architecture</span
+              ><span class="tag hi">CQRS + MediatR</span>
+              <span class="tag">DDD</span
+              ><span class="tag">Entity Framework Core</span>
+              <span class="tag">Blazor WASM</span
+              ><span class="tag">SignalR</span> <span class="tag">MVC</span
+              ><span class="tag">Identity</span>
+            </div>
+          </div>
+
+          <div class="skill-card rv d2">
+            <div class="sk-icon">🗄️</div>
+            <div class="sk-title">Database & Messaging</div>
+            <div class="tags">
+              <span class="tag hi">SQL Server</span
+              ><span class="tag hi">Redis</span>
+              <span class="tag hi">RabbitMQ</span
+              ><span class="tag">PostgreSQL</span>
+              <span class="tag">MongoDB</span><span class="tag">LINQ</span>
+              <span class="tag">Outbox Pattern</span
+              ><span class="tag">Idempotency</span>
+            </div>
+          </div>
+
+          <div class="skill-card rv d3">
+            <div class="sk-icon">🤖</div>
+            <div class="sk-title">AI / Machine Learning</div>
+            <div class="tags">
+              <span class="tag hi">Python</span
+              ><span class="tag hi">Azure OpenAI (GPT)</span>
+              <span class="tag hi">BERT / AraBERT</span
+              ><span class="tag">DistilBERT</span>
+              <span class="tag">Whisper</span
+              ><span class="tag">Random Forest</span>
+              <span class="tag">NLP</span><span class="tag">Streamlit</span>
+              <span class="tag">FastAPI</span><span class="tag">OPUS-MT</span>
+            </div>
+          </div>
+
+          <div class="skill-card rv d1">
+            <div class="sk-icon">🟢</div>
+            <div class="sk-title">Node.js & Frontend</div>
+            <div class="tags">
+              <span class="tag hi">Node.js</span
+              ><span class="tag hi">Express.js</span>
+              <span class="tag">React 19</span
+              ><span class="tag">TypeScript</span>
+              <span class="tag">TailwindCSS</span
+              ><span class="tag">Framer Motion</span>
+              <span class="tag">JWT</span><span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-card rv d2">
+            <div class="sk-icon">🛠️</div>
+            <div class="sk-title">DevOps & Tools</div>
+            <div class="tags">
+              <span class="tag hi">Git & GitHub</span
+              ><span class="tag hi">Azure</span> <span class="tag">Docker</span
+              ><span class="tag">Vercel</span> <span class="tag">Stripe</span
+              ><span class="tag">Postman</span> <span class="tag">xUnit</span
+              ><span class="tag">Swagger</span>
+            </div>
+          </div>
+
+          <div class="skill-card rv d3">
+            <div class="sk-icon">🏗️</div>
+            <div class="sk-title">Architecture & Patterns</div>
+            <div class="tags">
+              <span class="tag hi">SOLID</span><span class="tag hi">OOP</span>
+              <span class="tag hi">Microservices</span
+              ><span class="tag">Repository Pattern</span>
+              <span class="tag">Specification Pattern</span
+              ><span class="tag">Observer Pattern</span>
+              <span class="tag">Event-Driven</span
+              ><span class="tag">Agile / Scrum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects">
+      <div class="sw">
+        <div class="eyebrow">Portfolio</div>
+        <h2 class="sec-title">Featured <em>Projects</em></h2>
+        <p class="sec-sub">
+          Systems built across multiple domains — from enterprise .NET platforms
+          to AI-powered applications.
+        </p>
+
+        <div class="filter-row">
+          <button class="filter-btn active" onclick="doFilter('all', this)">
+            All (15)
+          </button>
+          <button class="filter-btn" onclick="doFilter('net', this)">
+            .NET Backend
+          </button>
+          <button class="filter-btn" onclick="doFilter('ai', this)">
+            AI / ML
+          </button>
+          <button class="filter-btn" onclick="doFilter('node', this)">
+            Node.js
+          </button>
+          <button class="filter-btn" onclick="doFilter('fullstack', this)">
+            Full Stack
+          </button>
+          <button class="filter-btn" onclick="doFilter('oop', this)">
+            OOP Systems
+          </button>
+        </div>
+
+        <div class="proj-grid" id="pg">
+          <div class="proj-card featured rv" data-cat="ai net">
+            <div class="proj-feat-tag">⭐ Graduation Project</div>
+            <div class="proj-head">
+              <span class="proj-icon">🧩</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-ai">AI · .NET · NLP</div>
+            <div class="proj-name">Autism Spectrum Disorder Smart Care</div>
+            <div class="proj-desc">
+              A comprehensive ASD platform built with ASP.NET Core MVC,
+              featuring early detection, severity assessment (Mild to Severe),
+              and an intelligent virtual specialist. Multi-model AI pipeline:
+              Fine-tuned BERT for relevance checking, DistilBERT for sentiment
+              analysis, GPT-3.5 (Azure) for Arabic/English expert chatbot, and
+              Whisper for voice interaction. Deployed on Azure for high
+              availability.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">ASP.NET Core MVC</span
+              ><span class="t-pill">BERT</span>
+              <span class="t-pill">DistilBERT</span
+              ><span class="t-pill">GPT-3.5 Azure</span>
+              <span class="t-pill">Whisper</span
+              ><span class="t-pill">OPUS-MT</span>
+              <span class="t-pill">Azure</span><span class="t-pill">NLP</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv" data-cat="net">
+            <div class="proj-head">
+              <span class="proj-icon">🎫</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-net">.NET · Event-Driven</div>
+            <div class="proj-name">EventFlow – Booking Platform</div>
+            <div class="proj-desc">
+              .NET 8 Modular Monolith using Event-Driven Architecture (EDA) to
+              decouple modules (Orders, Inventory, Payment, Notifications).
+              RabbitMQ message broker with Outbox Pattern and Idempotency logic.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">.NET 8</span
+              ><span class="t-pill">RabbitMQ</span>
+              <span class="t-pill">CQRS + MediatR</span
+              ><span class="t-pill">DDD</span>
+              <span class="t-pill">Outbox Pattern</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d1" data-cat="net">
+            <div class="proj-head">
+              <span class="proj-icon">💬</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-net">.NET · Real-Time</div>
+            <div class="proj-name">OmniLink – Enterprise Messaging</div>
+            <div class="proj-desc">
+              High-performance chat system with .NET 8 and Blazor WASM. Clean
+              Architecture + CQRS, SignalR for real-time messaging, Redis for
+              distributed caching, RBAC group management, and threaded replies.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">.NET 8</span
+              ><span class="t-pill">Blazor WASM</span>
+              <span class="t-pill">SignalR</span
+              ><span class="t-pill">Redis</span> <span class="t-pill">CQRS</span
+              ><span class="t-pill">JWT</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d2" data-cat="net">
+            <div class="proj-head">
+              <span class="proj-icon">🛒</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-net">.NET · E-Commerce</div>
+            <div class="proj-name">Buyverse – E-Commerce API</div>
+            <div class="proj-desc">
+              Production-ready .NET 8 API with DDD and Clean Architecture.
+              Specification Pattern for dynamic querying, Redis basket caching,
+              and Stripe Webhooks for automated order-status synchronization.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">.NET 8</span><span class="t-pill">DDD</span>
+              <span class="t-pill">Redis</span
+              ><span class="t-pill">Stripe</span>
+              <span class="t-pill">Specification Pattern</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv" data-cat="net">
+            <div class="proj-head">
+              <span class="proj-icon">🏪</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-net">.NET · MVC</div>
+            <div class="proj-name">ApexCart – E-Commerce Web App</div>
+            <div class="proj-desc">
+              .NET 8 MVC platform with full product lifecycle, Stripe checkout,
+              Admin Dashboard with activity logging. Redis/MemoryCache
+              optimization, Identity RBAC, brute-force protection, and
+              ImageSharp image processing.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">.NET 8 MVC</span
+              ><span class="t-pill">Identity</span>
+              <span class="t-pill">Redis</span
+              ><span class="t-pill">Stripe</span>
+              <span class="t-pill">AJAX</span
+              ><span class="t-pill">ImageSharp</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d1" data-cat="ai">
+            <div class="proj-head">
+              <span class="proj-icon">🌐</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04/Faseeh-Arabic-NLP"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-ai">AI · NLP</div>
+            <div class="proj-name">Faseeh – Arabic NLP Platform</div>
+            <div class="proj-desc">
+              Arabic sentiment analysis and text correction using AraBERT
+              (best-performing model), Azure OpenAI GPT-3.5 for spell checking,
+              and Azure Cognitive Services Speech SDK for text-to-speech with
+              multiple Arabic dialects.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">AraBERT</span
+              ><span class="t-pill">Azure OpenAI</span>
+              <span class="t-pill">Speech SDK</span
+              ><span class="t-pill">Streamlit</span>
+              <span class="t-pill">Python</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d2" data-cat="fullstack">
+            <div class="proj-head">
+              <span class="proj-icon">🌱</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-full">Full Stack · IoT · AI</div>
+            <div class="proj-name">AgriSense – Smart Farming</div>
+            <div class="proj-desc">
+              Full-stack smart farming combining IoT sensors, solar energy, and
+              AI for optimized irrigation. Real-time soil monitoring, AI-driven
+              crop recommendations, interactive dashboards, and Google OAuth
+              authentication.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">React 19</span
+              ><span class="t-pill">TypeScript</span>
+              <span class="t-pill">Convex</span
+              ><span class="t-pill">TailwindCSS</span>
+              <span class="t-pill">Framer Motion</span
+              ><span class="t-pill">Vercel</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv" data-cat="ai">
+            <div class="proj-head">
+              <span class="proj-icon">❤️</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04/PulseGuard-AI"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-ai">AI · HealthTech · ML</div>
+            <div class="proj-name">PulseGuard-AI – Cardiac Monitor</div>
+            <div class="proj-desc">
+              Production-ready ML system for real-time cardiac health
+              monitoring. Analyzes heart rate and acceleration data using
+              fine-tuned Random Forest classifier. Optimized for low-latency
+              deployment on wearable devices.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">Random Forest</span
+              ><span class="t-pill">Python</span>
+              <span class="t-pill">FastAPI</span
+              ><span class="t-pill">scikit-learn</span>
+              <span class="t-pill">Wearables</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d1" data-cat="ai">
+            <div class="proj-head">
+              <span class="proj-icon">🩺</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04/HealthSync-Diagnosis"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-ai">AI · MedTech · FastAPI</div>
+            <div class="proj-name">HealthSync-Diagnosis – Symptom API</div>
+            <div class="proj-desc">
+              Bilingual medical pre-diagnosis API with Azure OpenAI. Custom
+              language detection, symptom-to-specialty mapping, safety layers to
+              prevent AI hallucinations, and strict output formatting.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">FastAPI</span
+              ><span class="t-pill">Azure OpenAI</span>
+              <span class="t-pill">Python</span><span class="t-pill">NLP</span>
+              <span class="t-pill">Pydantic</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d2" data-cat="node">
+            <div class="proj-head">
+              <span class="proj-icon">👥</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-node">Node.js · MongoDB</div>
+            <div class="proj-name">Scrow_Code – Team Collaboration</div>
+            <div class="proj-desc">
+              Graduation-team matching system with dynamic profiles, team
+              capacity management, and request-approval workflow. Node.js +
+              MongoDB with RESTful APIs and JWT auth.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">Node.js</span
+              ><span class="t-pill">MongoDB</span>
+              <span class="t-pill">JWT</span
+              ><span class="t-pill">REST API</span>
+              <span class="t-pill">Express</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv" data-cat="node">
+            <div class="proj-head">
+              <span class="proj-icon">🎓</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04/EduCore-API"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-node">Node.js · E-Learning</div>
+            <div class="proj-name">EduCore API – University Platform</div>
+            <div class="proj-desc">
+              Scalable RESTful API for university and e-learning management.
+              Role-based access (Admin, Instructor, Student), modular
+              architecture, file uploads, and security middlewares.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">Node.js</span
+              ><span class="t-pill">Express</span>
+              <span class="t-pill">MongoDB</span><span class="t-pill">JWT</span>
+              <span class="t-pill">RBAC</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d1" data-cat="oop">
+            <div class="proj-head">
+              <span class="proj-icon">🕵️</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-oop">C# OOP · Fintech</div>
+            <div class="proj-name">Fraud Detection System</div>
+            <div class="proj-desc">
+              C# .NET 8 console system for financial transaction risk scoring.
+              Fraud rules engine (Amount, GeoLocation, Velocity, Night
+              Activity), visual risk bars, multi-user system, and persistent
+              JSON storage.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">C# .NET 8</span
+              ><span class="t-pill">OOP</span> <span class="t-pill">SOLID</span
+              ><span class="t-pill">Spectre.Console</span>
+              <span class="t-pill">JSON</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d2" data-cat="oop">
+            <div class="proj-head">
+              <span class="proj-icon">🏙️</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-oop">C# OOP · Simulation</div>
+            <div class="proj-name">Smart City Management Simulation</div>
+            <div class="proj-desc">
+              OOP simulation of smart city infrastructure covering electricity,
+              water, traffic, and emergency systems. Real-time anomaly
+              detection, dynamic vehicle dispatch, and analytics dashboard.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">C# .NET 8</span
+              ><span class="t-pill">Events & Delegates</span>
+              <span class="t-pill">LINQ</span
+              ><span class="t-pill">Repository Pattern</span>
+              <span class="t-pill">xUnit</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv" data-cat="oop">
+            <div class="proj-head">
+              <span class="proj-icon">📚</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-oop">C# OOP · Systems</div>
+            <div class="proj-name">Library Management System</div>
+            <div class="proj-desc">
+              Professional library system with SOLID principles. Fine & penalty
+              system, reservation with auto-notifications, book recommendation
+              engine, ratings/reviews, and comprehensive reporting.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">C#</span><span class="t-pill">SOLID</span>
+              <span class="t-pill">Generics</span
+              ><span class="t-pill">Events</span>
+              <span class="t-pill">LINQ</span>
+            </div>
+          </div>
+
+          <div class="proj-card rv d1" data-cat="oop">
+            <div class="proj-head">
+              <span class="proj-icon">🏫</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04"
+                  target="_blank"
+                  class="proj-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-oop">C# OOP · E-Learning</div>
+            <div class="proj-name">EduCore System – OOP Simulation</div>
+            <div class="proj-desc">
+              Backend simulation of a modern e-learning environment using SOLID
+              principles. Role-based management (Student, Instructor, Admin),
+              assessment engine, Repository Pattern, and Dependency Inversion.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">C#</span><span class="t-pill">SOLID</span>
+              <span class="t-pill">Repository Pattern</span
+              ><span class="t-pill">DI</span>
+              <span class="t-pill">OOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="certifications">
+      <div class="sw">
+        <div class="eyebrow">Credentials</div>
+        <h2 class="sec-title">Certifications & <em>Training</em></h2>
+        <p class="sec-sub">
+          Continuous learning across backend development, AI/ML, and
+          professional skills.
+        </p>
+
+        <div class="cert-tl">
+          <div class="cert-item rv">
+            <div class="cert-top">
+              <div class="cert-name">ASP.NET Backend Intern</div>
+              <div class="cert-date">Feb – May 2025</div>
+            </div>
+            <div class="cert-org">Route Academy</div>
+            <div class="cert-desc">
+              C# fundamentals, OOP, MVC applications, RESTful APIs with ASP.NET
+              Core, Entity Framework, LINQ, and SignalR.
+            </div>
+          </div>
+
+          <div class="cert-item rv d1">
+            <div class="cert-top">
+              <div class="cert-name">Microsoft Machine Learning Engineer</div>
+              <div class="cert-date">Apr – Oct 2024</div>
+            </div>
+            <div class="cert-org">
+              Digital Egypt Pioneers (DEPI) — Microsoft Sponsored
+            </div>
+            <div class="cert-desc">
+              Machine Learning, Deep Learning, NLP, and Computer Vision. From
+              data preprocessing to model evaluation.
+            </div>
+          </div>
+
+          <div class="cert-item rv d2">
+            <div class="cert-top">
+              <div class="cert-name">
+                SQL Development — Intro & Intermediate
+              </div>
+              <div class="cert-date">Feb – Mar 2026</div>
+            </div>
+            <div class="cert-org">Sololearn</div>
+            <div class="cert-desc">
+              Relational Database design, Joins, Subqueries, DML, and optimizing
+              data retrieval for backend systems.
+            </div>
+          </div>
+
+          <div class="cert-item rv">
+            <div class="cert-top">
+              <div class="cert-name">C# Programming — Intro & Intermediate</div>
+              <div class="cert-date">Feb – Mar 2026</div>
+            </div>
+            <div class="cert-org">Sololearn</div>
+            <div class="cert-desc">
+              OOP principles, Generics, LINQ, and C# best practices through
+              interactive coding challenges.
+            </div>
+          </div>
+
+          <div class="cert-item rv d1">
+            <div class="cert-top">
+              <div class="cert-name">
+                Backend Development Fundamentals (Node.js)
+              </div>
+              <div class="cert-date">Aug – Sep 2023</div>
+            </div>
+            <div class="cert-org">ITI — Information Technology Institute</div>
+            <div class="cert-desc">
+              150-hour intensive training covering Node.js, ES6+, scalable
+              server-side applications and RESTful APIs.
+            </div>
+          </div>
+
+          <div class="cert-item rv d2">
+            <div class="cert-top">
+              <div class="cert-name">Agile Project Management</div>
+              <div class="cert-date">Jan 2026</div>
+            </div>
+            <div class="cert-org">Edraak — Sponsored by Arab Bank</div>
+            <div class="cert-desc">
+              Agile principles, Scrum framework, backlog management, and sprint
+              events for iterative delivery.
+            </div>
+          </div>
+
+          <div class="cert-item rv">
+            <div class="cert-top">
+              <div class="cert-name">Business English Track</div>
+              <div class="cert-date">Apr – Oct 2024</div>
+            </div>
+            <div class="cert-org">
+              Digital Egypt Pioneers — Berlitz Egypt (MCIT)
+            </div>
+            <div class="cert-desc">
+              Professional communication, technical reporting, and effective
+              workplace interaction.
+            </div>
+          </div>
+
+          <div class="cert-item rv d1">
+            <div class="cert-top">
+              <div class="cert-name">Git and GitHub</div>
+              <div class="cert-date">Aug 2023</div>
+            </div>
+            <div class="cert-org">Almdrasa</div>
+            <div class="cert-desc">
+              Version control workflows, branching strategies, and collaborative
+              development best practices.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="education">
+      <div class="sw">
+        <div class="eyebrow">Education</div>
+        <h2 class="sec-title">Academic <em>Background</em></h2>
+
+        <div class="edu-card rv">
+          <div>
+            <div class="edu-deg">B.Sc. Computer Science</div>
+            <div class="edu-uni">
+              Suez Canal University — Faculty of Computers & Informatics
+            </div>
+            <div class="edu-period">Sep 2021 – Jul 2025</div>
+            <p class="edu-note">
+              Graduation Project:
+              <strong>Autism Spectrum Disorder Smart Care</strong> — Grade:
+              Excellent<br />
+              Focused on Software Engineering, AI/ML, Databases, OOP, and
+              Algorithms.
+            </p>
+          </div>
+          <div class="edu-gpa">
+            <div class="gpa-n">91.58%</div>
+            <div class="gpa-l">Cumulative GPA</div>
+            <div class="gpa-h">🏆 Excellent</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact">
+      <div class="sw">
+        <div class="eyebrow">Let's Talk</div>
+        <h2 class="sec-title">Get In <em>Touch</em></h2>
+
+        <div class="contact-grid">
+          <div>
+            <p class="contact-intro rv">
+              I'm currently open to new opportunities — whether it's a full-time
+              position, freelance project, or just a technical chat. My inbox is
+              always open.
+            </p>
+            <div class="cl-list">
+              <a href="mailto:ahmedfarouk1104@gmail.com" class="cl-item rv">
+                <div class="cl-ico">📧</div>
+                <div>
+                  <div class="cl-lbl">Email</div>
+                  <div class="cl-val">ahmedfarouk1104@gmail.com</div>
+                </div>
+                <span class="cl-arr">→</span>
+              </a>
+
+              <a
+                href="https://github.com/AhmedFarouk04"
+                target="_blank"
+                class="cl-item rv d1"
+              >
+                <div class="cl-ico">⌥</div>
+                <div>
+                  <div class="cl-lbl">GitHub</div>
+                  <div class="cl-val">github.com/AhmedFarouk04</div>
+                </div>
+                <span class="cl-arr">→</span>
+              </a>
+
+              <a
+                href="https://linkedin.com/in/ahmed-farouk-elhadidy"
+                target="_blank"
+                class="cl-item rv d2"
+              >
+                <div class="cl-ico">🔗</div>
+                <div>
+                  <div class="cl-lbl">LinkedIn</div>
+                  <div class="cl-val">Ahmed Farouk Elhadidy</div>
+                </div>
+                <span class="cl-arr">→</span>
+              </a>
+
+              <a href="tel:+201069203535" class="cl-item rv">
+                <div class="cl-ico">📱</div>
+                <div>
+                  <div class="cl-lbl">Phone / WhatsApp</div>
+                  <div class="cl-val">+20 106 920 3535</div>
+                </div>
+                <span class="cl-arr">→</span>
+              </a>
+
+              <div class="cl-item rv d1" style="cursor: default">
+                <div class="cl-ico">📍</div>
+                <div>
+                  <div class="cl-lbl">Location</div>
+                  <div class="cl-val">Mansoura, Egypt</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rv d2">
+            <div class="form-g">
+              <div class="form-2">
+                <div>
+                  <label class="form-lbl">Name</label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div>
+                  <label class="form-lbl">Email</label>
+                  <input
+                    type="email"
+                    class="form-input"
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="form-lbl">Subject</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Job Opportunity / Collaboration"
+                />
+              </div>
+              <div>
+                <label class="form-lbl">Message</label>
+                <textarea
+                  class="form-ta"
+                  placeholder="Tell me about the opportunity..."
+                ></textarea>
+              </div>
+              <button class="form-btn" onclick="submitForm(this)">
+                Send Message →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="f-copy">
+        © 2025 <span>Ahmed Farouk Elhadidy</span> · Mansoura, Egypt 🇪🇬
+      </div>
+      <div class="f-socials">
+        <a
+          href="https://github.com/AhmedFarouk04"
+          target="_blank"
+          class="f-social"
+          >GH</a
+        >
+        <a
+          href="https://linkedin.com/in/ahmed-farouk-elhadidy"
+          target="_blank"
+          class="f-social"
+          >in</a
+        >
+        <a href="mailto:ahmedfarouk1104@gmail.com" class="f-social">@</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
