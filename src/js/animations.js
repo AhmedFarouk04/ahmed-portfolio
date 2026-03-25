@@ -3,14 +3,18 @@ export function initAnimations() {
   const bar = document.getElementById("scroll-bar");
   const btt = document.getElementById("btt");
 
-  window.addEventListener("scroll", () => {
-    const pct =
-      (window.scrollY / (document.documentElement.scrollHeight - innerHeight)) *
-      100;
-    if (bar) bar.style.width = pct + "%";
-    if (btt) btt.classList.toggle("show", window.scrollY > 400);
-  });
-
+  window.addEventListener(
+    "scroll",
+    () => {
+      const pct =
+        (window.scrollY /
+          (document.documentElement.scrollHeight - innerHeight)) *
+        100;
+      if (bar) bar.style.width = pct + "%";
+      if (btt) btt.classList.toggle("show", window.scrollY > 400);
+    },
+    { passive: true },
+  );
   // 2. Hero Entrance
   window.addEventListener("load", () => {
     const heroLeft = document.querySelector(".hero-left");
@@ -39,32 +43,14 @@ export function initAnimations() {
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((e) => {
-        if (e.isIntersecting) e.target.classList.add("vis");
+        if (e.isIntersecting) {
+          e.target.classList.add("vis");
+          revealObserver.unobserve(e.target);
+        }
       });
     },
     { threshold: 0.1 },
   );
 
   document.querySelectorAll(".rv").forEach((el) => revealObserver.observe(el));
-
-  // 5. Active Nav Highlight
-  const sections = document.querySelectorAll("section, [id]");
-  const links = document.querySelectorAll(".nav-links a");
-  const navObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          links.forEach((l) => {
-            l.classList.toggle(
-              "active",
-              l.getAttribute("href") === "#" + e.target.id,
-            );
-          });
-        }
-      });
-    },
-    { threshold: 0.3, rootMargin: "-64px 0px 0px 0px" },
-  );
-
-  sections.forEach((s) => navObserver.observe(s));
 }

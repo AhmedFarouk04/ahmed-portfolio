@@ -4,23 +4,28 @@ export function initCursor() {
 
   if (!dot || !ring) return;
 
+  dot.style.cssText += ";position:fixed;left:0;top:0;pointer-events:none;";
+  ring.style.cssText += ";position:fixed;left:0;top:0;pointer-events:none;";
+
   let mx = 0,
-    my = 0,
-    rx = 0,
+    my = 0;
+  let rx = 0,
     ry = 0;
 
-  document.addEventListener("mousemove", (e) => {
-    mx = e.clientX;
-    my = e.clientY;
-    dot.style.left = mx + "px";
-    dot.style.top = my + "px";
-  });
+  document.addEventListener(
+    "mousemove",
+    (e) => {
+      mx = e.clientX;
+      my = e.clientY;
+      dot.style.transform = `translate(${mx}px, ${my}px)`;
+    },
+    { passive: true },
+  );
 
   function loop() {
     rx += (mx - rx) * 0.14;
     ry += (my - ry) * 0.14;
-    ring.style.left = rx + "px";
-    ring.style.top = ry + "px";
+    ring.style.transform = `translate(${rx}px, ${ry}px)`;
     requestAnimationFrame(loop);
   }
 
@@ -28,9 +33,13 @@ export function initCursor() {
 
   // Hover effects
   document.querySelectorAll("a, button, .filter-btn").forEach((el) => {
-    el.addEventListener("mouseenter", () => document.body.classList.add("ch"));
-    el.addEventListener("mouseleave", () =>
-      document.body.classList.remove("ch"),
+    el.addEventListener("mouseenter", () => document.body.classList.add("ch"), {
+      passive: true,
+    });
+    el.addEventListener(
+      "mouseleave",
+      () => document.body.classList.remove("ch"),
+      { passive: true },
     );
   });
 }

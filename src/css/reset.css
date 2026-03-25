@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  backface-visibility: hidden;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ff-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  cursor: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  font-family: var(--ff-body);
+  cursor: none;
+  border: none;
+  background: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-dim);
+  border-radius: 2px;
+}
