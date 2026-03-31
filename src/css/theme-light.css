@@ -1,0 +1,209 @@
+html[data-theme="light"] {
+  --bg: #f8f9fa;
+  --bg1: #ffffff;
+  --bg2: #f3f4f6;
+  --surface: #ffffff;
+  --surface2: #f3f4f6;
+
+  --border: rgba(100, 116, 139, 0.15);
+  --border2: rgba(100, 116, 139, 0.25);
+
+  --accent: #5b7cff;
+  --accent-bright: #6b8dff;
+  --accent-dim: #4a63e0;
+  --accent-glow: rgba(91, 124, 255, 0.12);
+  --accent-rgb: 91, 124, 255;
+
+  --cyan: #0891b2;
+  --cyan-dim: rgba(8, 145, 178, 0.12);
+  --cyan-rgb: 8, 145, 178;
+
+  --violet: #a855f7;
+  --gold: #d97706;
+  --green: #059669;
+  --red: #dc2626;
+  --pink: #db2777;
+
+  --text: #1a202c;
+  --text2: #64748b;
+  --text3: #cbd5e1;
+
+  --bg-gradient: linear-gradient(135deg, #f8f9fa 0%, #f1f5f9 100%);
+}
+
+html {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+html[data-theme="light"] body {
+  background: #f8f9fa;
+  color: #1a202c;
+}
+
+html[data-theme="light"] body::before {
+  background:
+    radial-gradient(
+      ellipse 90% 70% at 5% -10%,
+      rgba(91, 124, 255, 0.05) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 95% 110%,
+      rgba(8, 145, 178, 0.03) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 70% 60% at 50% 50%,
+      rgba(91, 124, 255, 0.02) 0%,
+      transparent 70%
+    );
+}
+
+html[data-theme="light"] nav {
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom-color: rgba(100, 116, 139, 0.1);
+}
+
+html[data-theme="light"] .hero-role {
+  background: linear-gradient(
+    90deg,
+    rgba(91, 124, 255, 0.08),
+    rgba(8, 145, 178, 0.06)
+  );
+  border-color: rgba(8, 145, 178, 0.2);
+  box-shadow: 0 0 15px rgba(8, 145, 178, 0.08);
+}
+
+html[data-theme="light"] .btn-primary {
+  background: linear-gradient(90deg, #5b7cff, #0891b2);
+  box-shadow:
+    0 0 30px rgba(91, 124, 255, 0.25),
+    0 4px 15px rgba(91, 124, 255, 0.15);
+}
+
+html[data-theme="light"] .btn-primary:hover {
+  box-shadow:
+    0 0 45px rgba(91, 124, 255, 0.4),
+    0 8px 25px rgba(91, 124, 255, 0.25);
+}
+
+html[data-theme="light"] .btn-secondary {
+  border-color: #e2e8f0;
+  color: #334155;
+}
+
+html[data-theme="light"] .btn-secondary:hover {
+  background: rgba(91, 124, 255, 0.05);
+  border-color: #0891b2;
+  color: #0891b2;
+}
+
+html[data-theme="light"] .c-dot {
+  box-shadow: 0 0 10px rgba(91, 124, 255, 0.7);
+}
+
+html[data-theme="light"] .c-ring {
+  border-color: rgba(91, 124, 255, 0.3);
+}
+
+html[data-theme="light"] body.ch .c-ring {
+  border-color: rgba(91, 124, 255, 0.15);
+}
+
+html[data-theme="light"] .skill-card,
+html[data-theme="light"] .proj-card,
+html[data-theme="light"] .cert-item,
+html[data-theme="light"] .edu-card,
+html[data-theme="light"] .cl-item {
+  background: rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid rgba(100, 116, 139, 0.15) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+html[data-theme="light"] .skill-card:hover,
+html[data-theme="light"] .proj-card:hover,
+html[data-theme="light"] .cl-item:hover {
+  background: rgba(91, 124, 255, 0.04) !important;
+  border-color: rgba(91, 124, 255, 0.25) !important;
+  box-shadow: 0 8px 25px rgba(91, 124, 255, 0.1);
+}
+
+html[data-theme="light"] .form-input,
+html[data-theme="light"] .form-ta {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border-color: rgba(100, 116, 139, 0.2) !important;
+}
+
+html[data-theme="light"] .form-input:focus,
+html[data-theme="light"] .form-ta:focus {
+  border-color: #5b7cff;
+  box-shadow: 0 0 0 3px rgba(91, 124, 255, 0.08);
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+html[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+}
+
+html[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+html[data-theme="light"] #scroll-bar {
+  box-shadow: 0 0 10px rgba(91, 124, 255, 0.4);
+}
+
+html[data-theme="light"] .divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(91, 124, 255, 0.08),
+    transparent
+  );
+}
+
+html[data-theme="light"] .sec-title em {
+  background: linear-gradient(120deg, #6b8dff, #0891b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html[data-theme="light"] .tag {
+  background: rgba(91, 124, 255, 0.05);
+  border-color: rgba(91, 124, 255, 0.15);
+  color: #334155;
+}
+
+html[data-theme="light"] .tag.hi {
+  background: rgba(91, 124, 255, 0.1);
+  border-color: rgba(91, 124, 255, 0.3);
+  color: #5b7cff;
+}
+
+html[data-theme="light"] .about-item {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(100, 116, 139, 0.12);
+}
+
+html[data-theme="light"] .about-item:hover {
+  border-color: rgba(8, 145, 178, 0.3);
+}
+html[data-theme="light"] .cert-date,
+html[data-theme="light"] .free-date,
+html[data-theme="light"] .edu-period {
+  color: #475569 !important;
+  border-color: #cbd5e1 !important;
+  background-color: #f1f5f9 !important;
+  font-weight: 600 !important;
+}
+html[data-theme="dark"] .cert-date,
+html[data-theme="dark"] .free-date,
+html[data-theme="dark"] .edu-period {
+  color: #94a3b8 !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
+  font-weight: 600 !important;
+}

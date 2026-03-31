@@ -1,11 +1,18 @@
 import "../css/variables.css";
 import "../css/reset.css";
 import "../css/main.css";
+import "../css/theme-toggle.css";
+import "../css/theme-light.css";
+import "../css/stats.css"; // ← NEW
 
 import { initCursor } from "./cursor.js";
 import { initAnimations } from "./animations.js";
+import { initThemeToggle } from "./theme-toggle.js";
+import { initStats } from "./stats.js"; // ← NEW
 
 document.addEventListener("DOMContentLoaded", () => {
+  initThemeToggle();
+  initStats(); // ← NEW (after theme but before other animations)
   initCursor();
   initAnimations();
   initFilters();

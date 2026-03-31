@@ -1,4 +1,7 @@
 export function initCursor() {
+  // ✨ الحماية: إذا كان الجهاز لا يدعم الـ Hover (مثل الموبايل والتابلت)، أوقف الفانكشن فوراً
+  if (!window.matchMedia("(hover: hover)").matches) return;
+
   const dot = document.getElementById("cDot");
   const ring = document.getElementById("cRing");
 
@@ -39,7 +42,9 @@ export function initCursor() {
     el.addEventListener(
       "mouseleave",
       () => document.body.classList.remove("ch"),
-      { passive: true },
+      {
+        passive: true,
+      },
     );
   });
 }

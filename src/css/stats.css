@@ -1,0 +1,231 @@
+/* ─── QUICK STATS SECTION ─── */
+
+#quick-stats {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px clamp(1.5rem, 5%, 4rem) 60px;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 3.5rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background gradient for stats section */
+.stats-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 120, 255, 0.04) 0%,
+    transparent 50%,
+    rgba(0, 212, 255, 0.03) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stats-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Individual stat cell */
+.stat-cell {
+  text-align: center;
+  padding: 1.8rem 1.25rem;
+  transition: all 0.3s var(--ease);
+  cursor: default;
+  border-radius: 12px;
+}
+
+.stat-cell:hover {
+  background: rgba(99, 120, 255, 0.06);
+  transform: translateY(-3px);
+}
+
+/* Stat number (the big animated number) */
+.stat-num {
+  font-family: var(--ff-display);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  background: linear-gradient(120deg, var(--accent-bright), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.8rem;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stat label (the descriptive text) */
+.stat-label {
+  font-family: var(--ff-mono);
+  font-size: 0.8rem;
+  color: var(--text2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+/* Stat sublabel (optional context) */
+.stat-sublabel {
+  font-size: 0.75rem;
+  color: var(--text2);
+  margin-top: 0.3rem;
+  opacity: 1;
+  font-weight: 400;
+}
+
+/* Divider lines between stats (desktop only) */
+@media (min-width: 768px) {
+  .stat-cell:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      var(--border),
+      transparent
+    );
+  }
+}
+
+/* Light mode adjustments */
+html[data-theme="light"] .stat-num {
+  background: linear-gradient(120deg, #6b8dff, #0891b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html[data-theme="light"] .stats-container {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(100, 116, 139, 0.15);
+}
+
+html[data-theme="light"] .stat-cell:hover {
+  background: rgba(91, 124, 255, 0.06);
+}
+
+html[data-theme="light"] .stats-container::before {
+  background: linear-gradient(
+    135deg,
+    rgba(91, 124, 255, 0.03) 0%,
+    transparent 50%,
+    rgba(8, 145, 178, 0.02) 100%
+  );
+}
+
+/* Responsive: tablet */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .stat-cell {
+    padding: 1.5rem 1rem;
+  }
+
+  .stat-num {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    min-height: 48px;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+}
+
+/* Responsive: mobile */
+@media (max-width: 480px) {
+  #quick-stats {
+    padding: 60px clamp(1rem, 4%, 1.5rem) 40px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .stat-cell {
+    padding: 1.2rem 0.75rem;
+  }
+
+  .stat-num {
+    font-size: 1.8rem;
+    min-height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  .stat-sublabel {
+    font-size: 0.65rem;
+    margin-top: 0.2rem;
+  }
+}
+
+/* Animation: smooth fade-in for stats section */
+#quick-stats {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealStats 0.8s var(--ease) forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes revealStats {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glassmorphism effect (optional enhancement) */
+.stats-container {
+  backdrop-filter: blur(12px) saturate(150%);
+}
+
+/* Hover effect: subtle glow on the whole container */
+#quick-stats:hover .stat-cell {
+  opacity: 0.85;
+}
+
+#quick-stats .stat-cell:hover {
+  opacity: 1;
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  #quick-stats {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .stat-cell {
+    transition: none;
+  }
+}

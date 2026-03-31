@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,6 +27,7 @@
 
     <link rel="stylesheet" href="/src/css/main.css" />
   </head>
+
   <body>
     <div id="scroll-bar"></div>
 
@@ -46,10 +47,19 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#freelance">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Toggle dark/light mode"
+      >
+        <span class="theme-icon">🌙</span>
+        <span class="theme-label">Dark</span>
+      </button>
     </nav>
 
     <section id="hero">
@@ -66,21 +76,22 @@
         <div class="hero-role">Back-End .NET Developer</div>
 
         <p class="hero-desc">
-          Specialized in building
-          <strong>scalable, production-ready systems</strong> with
+          Skilled in building
+          <strong>scalable, maintainable systems</strong> using
           <strong>Clean Architecture</strong> and <strong>CQRS</strong>.
-          Experienced in RESTful APIs, microservices with RabbitMQ, and
-          AI-integrated platforms deployed on Azure.
+          Experienced in developing RESTful APIs, event-driven architectures
+          with RabbitMQ, and integrating AI-powered features.
         </p>
+
         <div class="hero-cta rv d2">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a
             href="./Ahmed_Farouk_CV.pdf"
             download="Ahmed_Farouk_CV.pdf"
             target="_blank"
-            class="btn btn-secondary"
+            class="btn btn-outline"
           >
-            Download CV
+            <i class="fas fa-download"></i> Download CV
           </a>
         </div>
       </div>
@@ -101,7 +112,33 @@
         </div>
       </div>
     </section>
+    <section id="quick-stats">
+      <div class="stats-container">
+        <div class="stat-cell">
+          <div class="stat-num" data-count="17" data-suffix="">0</div>
+          <div class="stat-label">Projects</div>
+          <div class="stat-sublabel">Completed</div>
+        </div>
 
+        <div class="stat-cell">
+          <div class="stat-num" data-count="8" data-suffix="+">0</div>
+          <div class="stat-label">Certifications</div>
+          <div class="stat-sublabel">Earned</div>
+        </div>
+
+        <div class="stat-cell">
+          <div class="stat-num" data-count="4" data-suffix="+">0</div>
+          <div class="stat-label">Years</div>
+          <div class="stat-sublabel">Combined Learning</div>
+        </div>
+
+        <div class="stat-cell">
+          <div class="stat-num" data-count="91.58" data-suffix="%">0%</div>
+          <div class="stat-label">GPA</div>
+          <div class="stat-sublabel">Excellent</div>
+        </div>
+      </div>
+    </section>
     <div class="divider"></div>
 
     <div id="about">
@@ -116,64 +153,45 @@
               <strong
                 >Computer Science graduate from Suez Canal University</strong
               >
-              (Class of 2025, GPA: Excellent 91.58%), operating as a passionate
-              Back-End .NET Developer specialized in building scalable,
-              production-ready systems.
+              (Class of 2025, GPA: Excellent 91.58%), and a passionate Back-End
+              .NET Developer focused on building clean, efficient, and scalable
+              systems.
             </p>
           </div>
 
           <div class="about-item rv d3">
             <span class="about-icon">⚙️</span>
             <p class="about-p">
-              My core expertise lies in
+              Through multiple hands-on projects, I’ve built a strong foundation
+              in
               <strong>.NET Core, Clean Architecture, and CQRS</strong>. I have
-              strong experience designing RESTful APIs and building
-              microservices using <strong>RabbitMQ</strong> for asynchronous
-              communication, strictly applying SOLID and design patterns.
+              solid experience designing RESTful APIs and implementing
+              asynchronous communication using <strong>RabbitMQ</strong>,
+              strictly adhering to SOLID principles and design patterns.
             </p>
           </div>
 
           <div class="about-item rv d4">
             <span class="about-icon">🤖</span>
             <p class="about-p">
-              Beyond .NET, I have foundational knowledge in
+              Beyond .NET, I bring foundational knowledge in
               <strong>AI & Machine Learning (NLP, Computer Vision)</strong>,
-              along with hands-on experience in
-              <strong>Node.js, MVC applications, and caching (Redis)</strong>
-              giving me a holistic understanding of modern software systems.
-            </p>
-          </div>
-
-          <div class="about-item rv d3">
-            <span class="about-icon">⚙️</span>
-            <p class="about-p">
-              My core expertise lies in
-              <strong
-                >.NET 8, Clean Architecture, and Domain-Driven Design</strong
-              >. I've built everything from event-driven booking platforms to
-              real-time chat systems, always with a focus on maintainability and
-              performance.
-            </p>
-          </div>
-
-          <div class="about-item rv d4">
-            <span class="about-icon">🤖</span>
-            <p class="about-p">
-              Beyond .NET, I have hands-on experience with
-              <strong>AI/ML</strong>, Node.js APIs, and full-stack development
-              giving me a holistic understanding of modern software systems.
+              along with practical experience in
+              <strong>Node.js, MVC applications, and caching (Redis)</strong>.
+              This allows me to seamlessly integrate AI features into modern
+              backend applications.
             </p>
           </div>
         </div>
       </div>
     </div>
     <div class="divider"></div>
-
     <section id="skills">
       <div class="sw">
         <h2 class="sec-title">Technical <em>Skills</em></h2>
         <p class="sec-sub">
-          Technologies and tools I use to build production-grade systems.
+          Technologies, architectures, and tools I use to build maintainable and
+          production-grade systems.
         </p>
 
         <div class="skills-grid">
@@ -182,29 +200,27 @@
             <div class="sk-title">Backend Development</div>
             <div class="tags">
               <span class="tag hi">C#</span>
-              <span class="tag hi">.NET 8 / Core</span>
+              <span class="tag hi">.NET 8</span>
               <span class="tag hi">ASP.NET Core</span>
-              <span class="tag hi">RESTful APIs</span>
-              <span class="tag">MVC</span>
+              <span class="tag hi">Web API</span>
+              <span class="tag hi">EF Core</span>
               <span class="tag">SignalR</span>
+              <span class="tag">LINQ</span>
               <span class="tag">Node.js</span>
-              <span class="tag">JWT</span>
             </div>
           </div>
 
           <div class="skill-card rv d2">
             <div class="sk-icon">🏗️</div>
-            <div class="sk-title">Architecture & Patterns</div>
+            <div class="sk-title">Architecture & Design</div>
             <div class="tags">
               <span class="tag hi">Clean Architecture</span>
+              <span class="tag hi">SOLID Principles</span>
+              <span class="tag hi">CQRS (MediatR)</span>
               <span class="tag hi">Microservices</span>
-              <span class="tag hi">CQRS</span>
-              <span class="tag">SOLID</span>
-              <span class="tag">Onion Arch</span>
-              <span class="tag">N-Tier</span>
+              <span class="tag">Design Patterns</span>
+              <span class="tag">RESTful APIs</span>
               <span class="tag">Repository Pattern</span>
-              <span class="tag">Unit of Work</span>
-              <span class="tag">Specification Pattern</span>
             </div>
           </div>
 
@@ -216,35 +232,35 @@
               <span class="tag hi">RabbitMQ</span>
               <span class="tag hi">Redis</span>
               <span class="tag hi">MongoDB</span>
-              <span class="tag">Entity Framework Core</span>
-              <span class="tag">LINQ</span>
+              <span class="tag">Async Processing</span>
+              <span class="tag">Event-Driven</span>
             </div>
           </div>
 
           <div class="skill-card rv d1">
-            <div class="sk-icon">🤖</div>
-            <div class="sk-title">AI & Machine Learning</div>
+            <div class="sk-icon">🛠️</div>
+            <div class="sk-title">Security & Dev Tools</div>
             <div class="tags">
-              <span class="tag hi">NLP</span>
-              <span class="tag hi">Computer Vision</span>
-              <span class="tag hi">Deep Learning</span>
-              <span class="tag">ML Fundamentals</span>
-              <span class="tag">Data Preprocessing</span>
-              <span class="tag">Python</span>
-              <span class="tag">Azure OpenAI</span>
+              <span class="tag hi">Git & GitHub</span>
+              <span class="tag hi">Azure</span>
+              <span class="tag hi">Docker</span>
+              <span class="tag">JWT Auth</span>
+              <span class="tag">RBAC</span>
+              <span class="tag">Postman / Swagger</span>
+              <span class="tag">Agile Basics</span>
             </div>
           </div>
 
           <div class="skill-card rv d2">
-            <div class="sk-icon">🛠️</div>
-            <div class="sk-title">Dev Tools & Practices</div>
+            <div class="sk-icon">🤖</div>
+            <div class="sk-title">AI & Machine Learning</div>
             <div class="tags">
-              <span class="tag hi">Git & GitHub</span>
-              <span class="tag hi">Azure</span>
-              <span class="tag hi">Agile / Scrum</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Postman</span>
-              <span class="tag">Swagger</span>
+              <span class="tag hi">Python</span>
+              <span class="tag hi">Machine Learning</span>
+              <span class="tag hi">Azure OpenAI</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Data Preprocessing</span>
             </div>
           </div>
 
@@ -252,11 +268,10 @@
             <div class="sk-icon">💻</div>
             <div class="sk-title">Fundamentals & Frontend</div>
             <div class="tags">
-              <span class="tag hi">C / C++</span>
               <span class="tag hi">OOP</span>
-              <span class="tag hi">Problem Solving</span>
               <span class="tag hi">Data Structures</span>
-              <span class="tag">Algorithms</span>
+              <span class="tag hi">Problem Solving</span>
+              <span class="tag">C / C++</span>
               <span class="tag">React (Basic)</span>
               <span class="tag">HTML / CSS / JS</span>
             </div>
@@ -267,20 +282,173 @@
 
     <div class="divider"></div>
 
-    <section id="projects">
+    <section id="freelance">
       <div class="sw">
-        <h2 class="sec-title">Featured <em>Projects</em></h2>
-        <p class="sec-sub">
-          Systems built across multiple domains from enterprise .NET platforms
-          to AI-powered applications.
+        <h2 class="sec-title rv">Freelance <em>Experience</em></h2>
+        <p class="sec-sub rv">
+          Real-world systems and solutions delivered as a Freelance Backend
+          Developer.
         </p>
 
-        <div class="filter-row">
-          <button class="filter-btn active" data-filter="all">All (17)</button>
+        <div class="free-list">
+          <div class="free-card rv d1">
+            <div class="free-head">
+              <div class="free-title-wrap">
+                <div class="free-name">AgriSense – Smart Farming</div>
+                <div class="free-role">Freelance Full-Stack Developer</div>
+              </div>
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <div class="free-date">Jan 2026 – Mar 2026</div>
+                <a
+                  href="https://agrisense-smart.vercel.app/"
+                  class="proj-link"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+            <ul class="free-desc">
+              <li>
+                Developed a serverless IoT platform for a client (React 19,
+                Convex) with real-time soil monitoring and AI-driven automated
+                irrigation.
+              </li>
+              <li>
+                Integrated Google OAuth & Resend API, with interactive Recharts
+                dashboards for farm analytics and CSV data export.
+              </li>
+            </ul>
+            <div class="free-tech">
+              <span class="t-pill">React 19</span
+              ><span class="t-pill">Convex</span>
+              <span class="t-pill">IoT Integration</span
+              ><span class="t-pill">TailwindCSS</span>
+            </div>
+          </div>
+
+          <div class="free-card rv d2">
+            <div class="free-head">
+              <div class="free-title-wrap">
+                <div class="free-name">Uni AI Assistant</div>
+                <div class="free-role">Freelance AI & Backend Integration</div>
+              </div>
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <div class="free-date">Oct 2025 – Nov 2025</div>
+                <a
+                  href="https://uni-ai-assistant.vercel.app/"
+                  class="proj-link"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+            <ul class="free-desc">
+              <li>
+                Built backend APIs for a bilingual Node.js AI assistant
+                (GPT-4o-mini) with a custom intent-detection pipeline to
+                classify and route queries.
+              </li>
+              <li>
+                Architected a modular JSON knowledge-base featuring real-time
+                language detection and query normalization.
+              </li>
+            </ul>
+            <div class="free-tech">
+              <span class="t-pill">Node.js</span
+              ><span class="t-pill">GPT-4o-mini</span>
+              <span class="t-pill">NLP</span
+              ><span class="t-pill">REST API</span>
+            </div>
+          </div>
+
+          <div class="free-card rv d1">
+            <div class="free-head">
+              <div class="free-title-wrap">
+                <div class="free-name">PulseGuard-AI – Cardiac Monitor</div>
+                <div class="free-role">Freelance ML Engineer</div>
+              </div>
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <div class="free-date">May 2025 – Jun 2025</div>
+                <a
+                  href="https://github.com/AhmedFarouk04/PulseGuard-AI"
+                  class="proj-link"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <ul class="free-desc">
+              <li>
+                Developed a Random Forest ML pipeline for real-time cardiac
+                stress detection from wearable sensor data, achieving high
+                predictive accuracy.
+              </li>
+              <li>
+                Standardized data preprocessing and model inference logic,
+                delivering a ready-to-use module for seamless REST API
+                integration.
+              </li>
+            </ul>
+            <div class="free-tech">
+              <span class="t-pill">Python</span
+              ><span class="t-pill">Random Forest</span>
+              <span class="t-pill">FastAPI</span
+              ><span class="t-pill">Wearables</span>
+            </div>
+          </div>
+
+          <div class="free-card rv d2">
+            <div class="free-head">
+              <div class="free-title-wrap">
+                <div class="free-name">HealthSync-Diagnosis – Symptom API</div>
+                <div class="free-role">Freelance Deep Learning Engineer</div>
+              </div>
+              <div style="display: flex; gap: 1rem; align-items: center">
+                <div class="free-date">Jun 2025 - Jul 2025</div>
+                <a
+                  href="https://github.com/AhmedFarouk04/HealthSync-Diagnosis"
+                  class="proj-link"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <ul class="free-desc">
+              <li>
+                Built a bilingual medical pre-diagnosis API for a client using
+                Azure OpenAI and FastAPI.
+              </li>
+              <li>
+                Implemented custom language detection, symptom-to-specialty
+                mapping, and strict safety layers to prevent AI hallucinations.
+              </li>
+            </ul>
+            <div class="free-tech">
+              <span class="t-pill">FastAPI</span
+              ><span class="t-pill">Azure OpenAI</span>
+              <span class="t-pill">Python</span
+              ><span class="t-pill">Pydantic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects">
+      <div class="sw">
+        <h2 class="sec-title rv">Featured <em>Projects</em></h2>
+        <p class="sec-sub rv">
+          Complex architectural systems, academic projects, and tools built
+          across the .NET ecosystem.
+        </p>
+
+        <div class="filter-row rv">
+          <button class="filter-btn active" data-filter="all">All (13)</button>
           <button class="filter-btn" data-filter="net">.NET Backend</button>
           <button class="filter-btn" data-filter="ai">AI / ML</button>
           <button class="filter-btn" data-filter="node">Node.js</button>
-          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
           <button class="filter-btn" data-filter="oop">OOP Systems</button>
         </div>
 
@@ -292,8 +460,8 @@
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/ASD-SmartCare-AI"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -301,22 +469,17 @@
             <div class="proj-cat c-ai">AI · .NET · NLP</div>
             <div class="proj-name">Autism Spectrum Disorder Smart Care</div>
             <div class="proj-desc">
-              A comprehensive ASD platform built with ASP.NET Core MVC,
-              featuring early detection, severity assessment (Mild to Severe),
-              and an intelligent virtual specialist. Multi-model AI pipeline:
-              Fine-tuned BERT for relevance checking, DistilBERT for sentiment
-              analysis, GPT-3.5 (Azure) for Arabic/English expert chatbot, and
-              Whisper for voice interaction. Deployed on Azure for high
-              availability.
+              Awarded 3rd Place at SCU Faculty Conference; developed an
+              AI-driven ASD platform using ASP.NET Core MVC for early detection
+              and severity assessment. Built a multi-model pipeline (Fine-tuned
+              BERT, DistilBERT, Azure GPT-3.5) with Whisper voice integration
+              and OPUS-MT translation, Deployed on Azure App Service.
             </div>
             <div class="proj-tech">
               <span class="t-pill">ASP.NET Core MVC</span
-              ><span class="t-pill">BERT</span>
-              <span class="t-pill">DistilBERT</span
-              ><span class="t-pill">GPT-3.5 Azure</span>
-              <span class="t-pill">Whisper</span
-              ><span class="t-pill">OPUS-MT</span>
-              <span class="t-pill">Azure</span><span class="t-pill">NLP</span>
+              ><span class="t-pill">BERT</span
+              ><span class="t-pill">Azure GPT-3.5</span
+              ><span class="t-pill">Azure App Service</span>
             </div>
           </div>
 
@@ -326,8 +489,8 @@
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/EventFlow"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -335,16 +498,17 @@
             <div class="proj-cat c-net">.NET · Event-Driven</div>
             <div class="proj-name">EventFlow – Booking Platform</div>
             <div class="proj-desc">
-              .NET 8 Modular Monolith using Event-Driven Architecture (EDA) to
-              decouple modules (Orders, Inventory, Payment, Notifications).
-              RabbitMQ message broker with Outbox Pattern and Idempotency logic.
+              Architected a .NET 8 Modular Monolith utilizing Domain-Driven
+              Design (DDD) and CQRS (MediatR) to strictly decouple core business
+              modules. Implemented an asynchronous RabbitMQ messaging pipeline
+              for high throughput, improving delivery reliability using the
+              Outbox Pattern and idempotency.
             </div>
             <div class="proj-tech">
               <span class="t-pill">.NET 8</span
-              ><span class="t-pill">RabbitMQ</span>
-              <span class="t-pill">CQRS + MediatR</span
-              ><span class="t-pill">DDD</span>
-              <span class="t-pill">Outbox Pattern</span>
+              ><span class="t-pill">RabbitMQ</span
+              ><span class="t-pill">CQRS</span><span class="t-pill">DDD</span
+              ><span class="t-pill">Outbox Pattern</span>
             </div>
           </div>
 
@@ -354,8 +518,8 @@
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/OmniLink"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -363,15 +527,17 @@
             <div class="proj-cat c-net">.NET · Real-Time</div>
             <div class="proj-name">OmniLink – Enterprise Messaging</div>
             <div class="proj-desc">
-              High-performance chat system with .NET 8 and Blazor WASM. Clean
-              Architecture + CQRS, SignalR for real-time messaging, Redis for
-              distributed caching, RBAC group management, and threaded replies.
+              Architected a scalable .NET 8 & Blazor WASM messaging platform
+              utilizing Clean Architecture and CQRS (MediatR). Achieved
+              sub-millisecond latency for presence via Redis and sub-second
+              messaging via SignalR, secured with JWT, PBKDF2, and
+              rate-limiting.
             </div>
             <div class="proj-tech">
               <span class="t-pill">.NET 8</span
-              ><span class="t-pill">Blazor WASM</span>
-              <span class="t-pill">SignalR</span
-              ><span class="t-pill">Redis</span> <span class="t-pill">CQRS</span
+              ><span class="t-pill">SignalR</span
+              ><span class="t-pill">Redis</span
+              ><span class="t-pill">Clean Arch</span
               ><span class="t-pill">JWT</span>
             </div>
           </div>
@@ -382,8 +548,8 @@
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/Buyverse"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -391,15 +557,16 @@
             <div class="proj-cat c-net">.NET · E-Commerce</div>
             <div class="proj-name">Buyverse – E-Commerce API</div>
             <div class="proj-desc">
-              Production-ready .NET 8 API with DDD and Clean Architecture.
-              Specification Pattern for dynamic querying, Redis basket caching,
-              and Stripe Webhooks for automated order-status synchronization.
+              Built a production-ready .NET 8 RESTful API utilizing Clean
+              Architecture and DDD to ensure high scalability. Implemented the
+              Specification Pattern for dynamic SQL querying, managed stateful
+              cart transactions, and integrated Stripe Webhooks for secure order
+              synchronization.
             </div>
             <div class="proj-tech">
-              <span class="t-pill">.NET 8</span><span class="t-pill">DDD</span>
-              <span class="t-pill">Redis</span
-              ><span class="t-pill">Stripe</span>
-              <span class="t-pill">Specification Pattern</span>
+              <span class="t-pill">.NET 8</span><span class="t-pill">DDD</span
+              ><span class="t-pill">Stripe</span
+              ><span class="t-pill">Specification Pattern</span>
             </div>
           </div>
 
@@ -409,8 +576,8 @@
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/ApexCart"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -418,146 +585,24 @@
             <div class="proj-cat c-net">.NET · MVC</div>
             <div class="proj-name">ApexCart – E-Commerce Web App</div>
             <div class="proj-desc">
-              .NET 8 MVC platform with full product lifecycle, Stripe checkout,
-              Admin Dashboard with activity logging. Redis/MemoryCache
-              optimization, Identity RBAC, brute-force protection, and
-              ImageSharp image processing.
+              Developed a .NET 8 MVC e-commerce platform using Clean
+              Architecture and the Unit of Work pattern. Implemented real-time
+              AJAX cart (guest-to-auth merge), Stripe webhooks, ImageSharp media
+              optimization, and brute-force login protections.
             </div>
             <div class="proj-tech">
               <span class="t-pill">.NET 8 MVC</span
-              ><span class="t-pill">Identity</span>
-              <span class="t-pill">Redis</span
-              ><span class="t-pill">Stripe</span>
-              <span class="t-pill">AJAX</span
+              ><span class="t-pill">Unit of Work</span
+              ><span class="t-pill">Stripe</span
               ><span class="t-pill">ImageSharp</span>
             </div>
           </div>
 
-          <div class="proj-card rv d1" data-cat="ai">
-            <div class="proj-head">
-              <span class="proj-icon">🌐</span>
-              <div class="proj-links">
-                <a
-                  href="https://github.com/AhmedFarouk04/Faseeh-Arabic-NLP"
-                  target="_blank"
-                  class="proj-link"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="proj-cat c-ai">AI · NLP</div>
-            <div class="proj-name">Faseeh – Arabic NLP Platform</div>
-            <div class="proj-desc">
-              Arabic sentiment analysis and text correction using AraBERT
-              (best-performing model), Azure OpenAI GPT-3.5 for spell checking,
-              and Azure Cognitive Services Speech SDK for text-to-speech with
-              multiple Arabic dialects.
-            </div>
-            <div class="proj-tech">
-              <span class="t-pill">AraBERT</span
-              ><span class="t-pill">Azure OpenAI</span>
-              <span class="t-pill">Speech SDK</span
-              ><span class="t-pill">Streamlit</span>
-              <span class="t-pill">Python</span>
-            </div>
-          </div>
-
-          <div class="proj-card rv d2" data-cat="fullstack">
-            <div class="proj-head">
-              <span class="proj-icon">🌱</span>
-              <div class="proj-links">
-                <a
-                  href="https://github.com/AhmedFarouk04/AgriSense"
-                  target="_blank"
-                  class="proj-link"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="proj-cat c-full">Full Stack · IoT · AI</div>
-            <div class="proj-name">AgriSense – Smart Farming</div>
-            <div class="proj-desc">
-              Full-stack smart farming combining IoT sensors, solar energy, and
-              AI for optimized irrigation. Real-time soil monitoring, AI-driven
-              crop recommendations, interactive dashboards, and Google OAuth
-              authentication.
-            </div>
-            <div class="proj-tech">
-              <span class="t-pill">React 19</span
-              ><span class="t-pill">TypeScript</span>
-              <span class="t-pill">Convex</span
-              ><span class="t-pill">TailwindCSS</span>
-              <span class="t-pill">Framer Motion</span
-              ><span class="t-pill">Vercel</span>
-            </div>
-          </div>
-
-          <div class="proj-card rv" data-cat="ai">
-            <div class="proj-head">
-              <span class="proj-icon">❤️</span>
-              <div class="proj-links">
-                <a
-                  href="https://github.com/AhmedFarouk04/PulseGuard-AI"
-                  target="_blank"
-                  class="proj-link"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="proj-cat c-ai">AI · HealthTech · ML</div>
-            <div class="proj-name">PulseGuard-AI – Cardiac Monitor</div>
-            <div class="proj-desc">
-              Production-ready ML system for real-time cardiac health
-              monitoring. Analyzes heart rate and acceleration data using
-              fine-tuned Random Forest classifier. Optimized for low-latency
-              deployment on wearable devices.
-            </div>
-            <div class="proj-tech">
-              <span class="t-pill">Random Forest</span
-              ><span class="t-pill">Python</span>
-              <span class="t-pill">FastAPI</span
-              ><span class="t-pill">scikit-learn</span>
-              <span class="t-pill">Wearables</span>
-            </div>
-          </div>
-
-          <div class="proj-card rv d1" data-cat="ai">
-            <div class="proj-head">
-              <span class="proj-icon">🩺</span>
-              <div class="proj-links">
-                <a
-                  href="https://github.com/AhmedFarouk04/HealthSync-Diagnosis"
-                  target="_blank"
-                  class="proj-link"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="proj-cat c-ai">AI · MedTech · FastAPI</div>
-            <div class="proj-name">HealthSync-Diagnosis – Symptom API</div>
-            <div class="proj-desc">
-              Bilingual medical pre-diagnosis API with Azure OpenAI. Custom
-              language detection, symptom-to-specialty mapping, safety layers to
-              prevent AI hallucinations, and strict output formatting.
-            </div>
-            <div class="proj-tech">
-              <span class="t-pill">FastAPI</span
-              ><span class="t-pill">Azure OpenAI</span>
-              <span class="t-pill">Python</span><span class="t-pill">NLP</span>
-              <span class="t-pill">Pydantic</span>
-            </div>
-          </div>
-
-          <div class="proj-card rv d2" data-cat="node">
+          <div class="proj-card rv d1" data-cat="node">
             <div class="proj-head">
               <span class="proj-icon">👥</span>
               <div class="proj-links">
-                <a
-                  href="https://github.com/AhmedFarouk04"
-                  target="_blank"
-                  class="proj-link"
-                  >GitHub</a
-                >
+                <a class="proj-link">private</a>
               </div>
             </div>
             <div class="proj-cat c-node">Node.js · MongoDB</div>
@@ -569,21 +614,19 @@
             </div>
             <div class="proj-tech">
               <span class="t-pill">Node.js</span
-              ><span class="t-pill">MongoDB</span>
-              <span class="t-pill">JWT</span
+              ><span class="t-pill">MongoDB</span
               ><span class="t-pill">REST API</span>
-              <span class="t-pill">Express</span>
             </div>
           </div>
 
-          <div class="proj-card rv" data-cat="node">
+          <div class="proj-card rv d2" data-cat="node">
             <div class="proj-head">
               <span class="proj-icon">🎓</span>
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/EduCore-API"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -597,20 +640,19 @@
             </div>
             <div class="proj-tech">
               <span class="t-pill">Node.js</span
-              ><span class="t-pill">Express</span>
-              <span class="t-pill">MongoDB</span><span class="t-pill">JWT</span>
-              <span class="t-pill">RBAC</span>
+              ><span class="t-pill">Express</span
+              ><span class="t-pill">MongoDB</span>
             </div>
           </div>
 
-          <div class="proj-card rv d1" data-cat="oop">
+          <div class="proj-card rv" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">🕵️</span>
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/FraudDetectionSystem"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -620,25 +662,22 @@
             <div class="proj-desc">
               C# .NET 8 console system for financial transaction risk scoring.
               Fraud rules engine (Amount, GeoLocation, Velocity, Night
-              Activity), visual risk bars, multi-user system, and persistent
-              JSON storage.
+              Activity), visual risk bars, and persistent JSON storage.
             </div>
             <div class="proj-tech">
               <span class="t-pill">C# .NET 8</span
-              ><span class="t-pill">OOP</span> <span class="t-pill">SOLID</span
-              ><span class="t-pill">Spectre.Console</span>
-              <span class="t-pill">JSON</span>
+              ><span class="t-pill">OOP</span><span class="t-pill">SOLID</span>
             </div>
           </div>
 
-          <div class="proj-card rv d2" data-cat="oop">
+          <div class="proj-card rv d1" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">🏙️</span>
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/SmartCity-OS-Simulation"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -647,26 +686,24 @@
             <div class="proj-name">Smart City Management Simulation</div>
             <div class="proj-desc">
               OOP simulation of smart city infrastructure covering electricity,
-              water, traffic, and emergency systems. Real-time anomaly
-              detection, dynamic vehicle dispatch, and analytics dashboard.
+              water, traffic, and emergency systems. Real-time anomaly detection
+              and dynamic vehicle dispatch.
             </div>
             <div class="proj-tech">
               <span class="t-pill">C# .NET 8</span
-              ><span class="t-pill">Events & Delegates</span>
-              <span class="t-pill">LINQ</span
-              ><span class="t-pill">Repository Pattern</span>
-              <span class="t-pill">xUnit</span>
+              ><span class="t-pill">Events & Delegates</span
+              ><span class="t-pill">xUnit</span>
             </div>
           </div>
 
-          <div class="proj-card rv" data-cat="oop">
+          <div class="proj-card rv d2" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">📚</span>
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/LibroCore-Management-System"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -676,24 +713,22 @@
             <div class="proj-desc">
               Professional library system with SOLID principles. Fine & penalty
               system, reservation with auto-notifications, book recommendation
-              engine, ratings/reviews, and comprehensive reporting.
+              engine, and ratings.
             </div>
             <div class="proj-tech">
-              <span class="t-pill">C#</span><span class="t-pill">SOLID</span>
-              <span class="t-pill">Generics</span
-              ><span class="t-pill">Events</span>
-              <span class="t-pill">LINQ</span>
+              <span class="t-pill">C#</span><span class="t-pill">SOLID</span
+              ><span class="t-pill">LINQ</span>
             </div>
           </div>
 
-          <div class="proj-card rv d1" data-cat="oop">
+          <div class="proj-card rv" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">🏫</span>
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/EduCore-System"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -702,25 +737,24 @@
             <div class="proj-name">EduCore System – OOP Simulation</div>
             <div class="proj-desc">
               Backend simulation of a modern e-learning environment using SOLID
-              principles. Role-based management (Student, Instructor, Admin),
-              assessment engine, Repository Pattern, and Dependency Inversion.
+              principles. Role-based management, assessment engine, Repository
+              Pattern, and Dependency Inversion.
             </div>
             <div class="proj-tech">
-              <span class="t-pill">C#</span><span class="t-pill">SOLID</span>
-              <span class="t-pill">Repository Pattern</span
+              <span class="t-pill">C#</span
+              ><span class="t-pill">Repository Pattern</span
               ><span class="t-pill">DI</span>
-              <span class="t-pill">OOP</span>
             </div>
           </div>
 
-          <div class="proj-card rv d2" data-cat="net oop">
+          <div class="proj-card rv d1" data-cat="net oop">
             <div class="proj-head">
               <span class="proj-icon">⬇️</span>
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/SharpTube-Downloader"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -729,26 +763,23 @@
             <div class="proj-name">SharpTube Downloader</div>
             <div class="proj-desc">
               A high-speed C# CLI utility for YouTube content extraction.
-              Features real-time download progress tracking, metadata processing
-              with YoutubeExplode, and professional-grade media muxing/format
-              conversion using FFmpeg.
+              Features real-time download progress tracking, metadata
+              processing, and format conversion using FFmpeg.
             </div>
             <div class="proj-tech">
-              <span class="t-pill">C#</span>
-              <span class="t-pill">FFmpeg</span>
-              <span class="t-pill">YoutubeExplode</span>
-              <span class="t-pill">CLI</span>
+              <span class="t-pill">C#</span><span class="t-pill">FFmpeg</span
+              ><span class="t-pill">YoutubeExplode</span>
             </div>
           </div>
 
-          <div class="proj-card rv" data-cat="net oop">
+          <div class="proj-card rv d2" data-cat="net oop">
             <div class="proj-head">
               <span class="proj-icon">🧮</span>
               <div class="proj-links">
                 <a
                   href="https://github.com/AhmedFarouk04/EvalCore"
-                  target="_blank"
                   class="proj-link"
+                  target="_blank"
                   >GitHub</a
                 >
               </div>
@@ -757,20 +788,20 @@
             <div class="proj-name">EvalCore – Scientific Engine</div>
             <div class="proj-desc">
               A robust C# engine for multi-level arithmetic, covering basic,
-              advanced, and scientific operations (including complex numbers).
-              Features a "Stateful" logic with an ANS reference system and
-              high-precision parsing for dynamic expressions.
+              advanced, and scientific operations. Features a "Stateful" logic
+              with an ANS reference system.
             </div>
             <div class="proj-tech">
-              <span class="t-pill">C#</span>
-              <span class="t-pill">OOP</span>
-              <span class="t-pill">Expression Parsing</span>
-              <span class="t-pill">Algorithms</span>
+              <span class="t-pill">C#</span
+              ><span class="t-pill">Expression Parsing</span
+              ><span class="t-pill">Algorithms</span>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="divider"></div>
 
     <div class="divider"></div>
 
@@ -974,10 +1005,13 @@
         <div class="contact-grid">
           <div>
             <p class="contact-intro rv">
-              I'm currently open to new opportunities whether it's a full-time
-              position, freelance project, or just a technical chat. My inbox is
-              always open.
+              I'm actively looking for
+              <strong>Full-time, Part-time, or Contract</strong> roles.
+              Available immediately for <strong>On-site/Hybrid</strong> (Egypt)
+              and <strong>Remote</strong> positions (Egypt, KSA, UAE, Kuwait).
+              My inbox is always open for new opportunities or a technical chat!
             </p>
+
             <div class="cl-list">
               <a href="mailto:ahmedfarouk1104@gmail.com" class="cl-item rv">
                 <div class="cl-ico">📧</div>
@@ -1096,6 +1130,7 @@
         </div>
       </div>
     </section>
+
     <footer class="main-footer">
       <div class="sw footer-content">
         <div class="f-copy">
