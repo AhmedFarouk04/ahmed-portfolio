@@ -159,7 +159,6 @@ nav {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* الـ Dark mode specific override إذا كنت تريد */
 html[data-theme="dark"] nav {
   background: rgba(2, 3, 10, 0.8);
 }
@@ -2250,6 +2249,14 @@ img {
   a,
   button {
     cursor: auto !important;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 1025px) {
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
   }
 }
 
