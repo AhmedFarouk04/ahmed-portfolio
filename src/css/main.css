@@ -1491,11 +1491,15 @@ body.nav-open .nav-scrim {
   gap: 4rem;
   align-items: start;
 }
+.contact-grid > * {
+  min-width: 0;
+}
 .contact-intro {
   color: var(--text2);
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
+  overflow-wrap: anywhere;
 }
 
 .cl-item {
@@ -1536,6 +1540,8 @@ body.nav-open .nav-scrim {
   color: var(--text);
   font-weight: 500;
   font-size: 1rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .cl-arr {
@@ -1547,6 +1553,17 @@ body.nav-open .nav-scrim {
 
 .cl-item:hover .cl-arr {
   transform: translateX(4px);
+}
+
+.cl-item > div {
+  min-width: 0;
+  flex: 1;
+}
+
+.form-g,
+.form-2,
+.f-group {
+  min-width: 0;
 }
 .form-lbl {
   display: block;
@@ -1867,6 +1884,16 @@ footer {
     flex-direction: column;
     gap: 1.25rem;
     text-align: center;
+  }
+  #contact .sw {
+    padding-inline: 1rem;
+  }
+  .contact-grid {
+    gap: 1.5rem;
+  }
+  .cl-item {
+    gap: 0.9rem;
+    padding: 1rem;
   }
 }
 .skill-card,
