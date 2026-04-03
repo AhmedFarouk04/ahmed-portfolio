@@ -66,6 +66,46 @@ html[data-theme="light"] nav {
   border-bottom-color: rgba(100, 116, 139, 0.1);
 }
 
+html[data-theme="light"] .nav-menu-btn {
+  background: rgba(91, 124, 255, 0.08);
+  border-color: rgba(91, 124, 255, 0.18);
+  color: #5b7cff;
+  box-shadow: 0 8px 20px rgba(91, 124, 255, 0.08);
+}
+
+html[data-theme="light"] .nav-menu-btn:hover {
+  background: rgba(91, 124, 255, 0.14);
+  border-color: rgba(91, 124, 255, 0.3);
+  color: #4a63e0;
+}
+
+html[data-theme="light"] .nav-scrim {
+  background: rgba(241, 245, 249, 0.58);
+}
+
+html[data-theme="light"] .nav-links {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.96),
+    rgba(248, 250, 252, 0.98)
+  );
+  border-color: rgba(100, 116, 139, 0.14);
+  box-shadow: 0 18px 40px rgba(148, 163, 184, 0.18);
+}
+
+html[data-theme="light"] .nav-links a {
+  background: rgba(91, 124, 255, 0.035);
+  color: #334155;
+}
+
+html[data-theme="light"] .nav-links a:hover,
+html[data-theme="light"] .nav-links a.active {
+  background: rgba(91, 124, 255, 0.1);
+  border-color: rgba(91, 124, 255, 0.18);
+  color: #5b7cff;
+  text-shadow: none;
+}
+
 html[data-theme="light"] .hero-role {
   background: linear-gradient(
     90deg,
