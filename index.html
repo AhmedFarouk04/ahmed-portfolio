@@ -43,8 +43,17 @@
     </button>
 
     <nav>
+      <button
+        class="nav-menu-btn"
+        id="navMenuBtn"
+        aria-label="Open navigation menu"
+        aria-controls="siteNavLinks"
+        aria-expanded="false"
+      >
+        <span class="nav-menu-icon" aria-hidden="true"></span>
+      </button>
       <div class="nav-logo">Ahmed<span>.</span>dev</div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="siteNavLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#freelance">Experience</a></li>
@@ -61,6 +70,7 @@
         <span class="theme-label">Dark</span>
       </button>
     </nav>
+    <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
 
     <section id="hero">
       <div class="hero-grid-bg"></div>
@@ -102,6 +112,10 @@
           <img
             src="/public/Photo.png"
             alt="Ahmed Farouk"
+            width="360"
+            height="440"
+            decoding="async"
+            fetchpriority="high"
             onerror="
               this.style.background = 'linear-gradient(135deg,#101320,#151829)';
               this.removeAttribute('src');
@@ -284,11 +298,17 @@
 
     <section id="freelance">
       <div class="sw">
-        <h2 class="sec-title rv">Freelance <em>Experience</em></h2>
-        <p class="sec-sub rv">
-          Real-world systems and solutions delivered as a Freelance Backend
-          Developer.
-        </p>
+        <h2 class="sec-title rv">Work <em>Experience</em></h2>
+        <div class="free-intro rv">
+          <div class="free-intro-head">
+            <h3 class="free-intro-title">Freelance Software Engineer</h3>
+            <div class="free-date free-intro-date">Jan 2024 &ndash; Present</div>
+          </div>
+          <p class="free-intro-copy">
+            Worked on 6+ freelance projects combining backend and AI solutions.
+            Selected examples below:
+          </p>
+        </div>
 
         <div class="free-list">
           <div class="free-card rv d1">
@@ -297,7 +317,7 @@
                 <div class="free-name">AgriSense – Smart Farming</div>
                 <div class="free-role">Freelance Full-Stack Developer</div>
               </div>
-              <div style="display: flex; gap: 1rem; align-items: center">
+              <div class="free-meta">
                 <div class="free-date">Jan 2026 – Mar 2026</div>
                 <a
                   href="https://agrisense-smart.vercel.app/"
@@ -332,7 +352,7 @@
                 <div class="free-name">Uni AI Assistant</div>
                 <div class="free-role">Freelance AI & Backend Integration</div>
               </div>
-              <div style="display: flex; gap: 1rem; align-items: center">
+              <div class="free-meta">
                 <div class="free-date">Oct 2025 – Nov 2025</div>
                 <a
                   href="https://uni-ai-assistant.vercel.app/"
@@ -367,7 +387,7 @@
                 <div class="free-name">PulseGuard-AI – Cardiac Monitor</div>
                 <div class="free-role">Freelance ML Engineer</div>
               </div>
-              <div style="display: flex; gap: 1rem; align-items: center">
+              <div class="free-meta">
                 <div class="free-date">May 2025 – Jun 2025</div>
                 <a
                   href="https://github.com/AhmedFarouk04/PulseGuard-AI"
@@ -403,7 +423,7 @@
                 <div class="free-name">HealthSync-Diagnosis – Symptom API</div>
                 <div class="free-role">Freelance Deep Learning Engineer</div>
               </div>
-              <div style="display: flex; gap: 1rem; align-items: center">
+              <div class="free-meta">
                 <div class="free-date">Jun 2025 - Jul 2025</div>
                 <a
                   href="https://github.com/AhmedFarouk04/HealthSync-Diagnosis"
