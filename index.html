@@ -457,7 +457,7 @@
 
     <div class="divider"></div>
 
-   <section id="projects">
+    <section id="projects">
       <div class="sw">
         <h2 class="sec-title rv">Featured <em>Projects</em></h2>
         <p class="sec-sub rv">
@@ -474,12 +474,13 @@
         </div>
 
         <div class="proj-grid" id="pg">
+          <!-- ⭐ Graduation Project -->
           <div class="proj-card featured rv" data-cat="ai net">
             <div class="proj-feat-tag">⭐ Graduation Project</div>
             <div class="proj-head">
               <span class="proj-icon">🧩</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/ASD-SmartCare-AI"
                   class="proj-link"
                   target="_blank"
@@ -504,11 +505,105 @@
             </div>
           </div>
 
+          <!-- NEW 1: Intelligent Inventory Allocation Engine -->
+          <div class="proj-card rv" data-cat="net">
+            <div class="proj-head">
+              <span class="proj-icon">📦</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04/Intelligent-Inventory-Allocation-Engine"
+                  class="proj-link"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-net">.NET · Clean Architecture · DDD</div>
+            <div class="proj-name">Intelligent Inventory Allocation Engine</div>
+            <div class="proj-desc">
+              Enterprise-grade Inventory Management System built with .NET 8,
+              Clean Architecture, and DDD. Features advanced multi-warehouse
+              stock allocation with strict validation, full audit trail for
+              every stock movement, automated low-stock alerts via reorder
+              thresholds, and CQRS with MediatR for optimized data flow.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">.NET 8</span
+              ><span class="t-pill">Clean Architecture</span
+              ><span class="t-pill">CQRS</span
+              ><span class="t-pill">EF Core</span
+              ><span class="t-pill">Serilog</span>
+            </div>
+          </div>
+
+          <!-- NEW 2: Observability & Audit System -->
+          <div class="proj-card rv d1" data-cat="net">
+            <div class="proj-head">
+              <span class="proj-icon">🔭</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04/Observability-Audit-System-DotNet"
+                  class="proj-link"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-net">.NET · Observability · Docker</div>
+            <div class="proj-name">Observability &amp; Audit System</div>
+            <div class="proj-desc">
+              Enterprise-level monitoring and auditing solution for .NET
+              applications. Custom middleware captures every HTTP request, user
+              action, IP address, and duration. Real-time metrics track system
+              health with Latency (P50, P95, P99) and Error Rate monitoring,
+              plus built-in CSV export for admin reporting.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">.NET 8</span
+              ><span class="t-pill">SQL Server</span
+              ><span class="t-pill">Docker</span
+              ><span class="t-pill">EF Core</span
+              ><span class="t-pill">Health Checks</span>
+            </div>
+          </div>
+
+          <!-- NEW 3: AgencyOps SaaS -->
+          <div class="proj-card rv d2" data-cat="net">
+            <div class="proj-head">
+              <span class="proj-icon">🏢</span>
+              <div class="proj-links">
+                <a
+                  href="https://github.com/AhmedFarouk04/AgencyOps"
+                  class="proj-link"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="proj-cat c-net">.NET · Modular Monolith · SaaS</div>
+            <div class="proj-name">AgencyOps SaaS</div>
+            <div class="proj-desc">
+              Production-grade modular monolith SaaS for real-world agency
+              operations. Covers project delivery, client approvals,
+              approval-triggered billing, multi-tenancy, and event-driven
+              workflows across 9 independent modules (Identity, Projects,
+              Approvals, Billing, Notifications, Reporting, Audit). Features
+              RBAC, optimistic concurrency, and integration tests.
+            </div>
+            <div class="proj-tech">
+              <span class="t-pill">.NET 8</span><span class="t-pill">CQRS</span
+              ><span class="t-pill">Domain Events</span
+              ><span class="t-pill">Multi-Tenancy</span
+              ><span class="t-pill">Clean Architecture</span>
+            </div>
+          </div>
+
+          <!-- EventFlow -->
           <div class="proj-card rv" data-cat="net">
             <div class="proj-head">
               <span class="proj-icon">🎫</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/EventFlow"
                   class="proj-link"
                   target="_blank"
@@ -533,11 +628,12 @@
             </div>
           </div>
 
+          <!-- OmniLink -->
           <div class="proj-card rv d1" data-cat="net">
             <div class="proj-head">
               <span class="proj-icon">💬</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/OmniLink"
                   class="proj-link"
                   target="_blank"
@@ -548,7 +644,7 @@
             <div class="proj-cat c-net">.NET · Real-Time</div>
             <div class="proj-name">OmniLink – Enterprise Messaging</div>
             <div class="proj-desc">
-              Architected a scalable .NET 8 & Blazor WASM messaging platform
+              Architected a scalable .NET 8 &amp; Blazor WASM messaging platform
               utilizing Clean Architecture and CQRS (MediatR). Achieved
               sub-millisecond latency for presence via Redis and sub-second
               messaging via SignalR, secured with JWT, PBKDF2, and
@@ -563,11 +659,12 @@
             </div>
           </div>
 
+          <!-- Buyverse -->
           <div class="proj-card rv d2" data-cat="net">
             <div class="proj-head">
               <span class="proj-icon">🛒</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/Buyverse"
                   class="proj-link"
                   target="_blank"
@@ -591,11 +688,12 @@
             </div>
           </div>
 
+          <!-- ApexCart -->
           <div class="proj-card rv" data-cat="net">
             <div class="proj-head">
               <span class="proj-icon">🏪</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/ApexCart"
                   class="proj-link"
                   target="_blank"
@@ -619,101 +717,7 @@
             </div>
           </div>
 
-          <!-- ── NEW: Intelligent Inventory Allocation Engine ── -->
-          <div class="proj-card rv d1" data-cat="net">
-            <div class="proj-head">
-              <span class="proj-icon">📦</span>
-              <div class="proj-links">
-                
-                  href="https://github.com/AhmedFarouk04/Intelligent-Inventory-Allocation-Engine"
-                  class="proj-link"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="proj-cat c-net">.NET · Inventory</div>
-            <div class="proj-name">Intelligent Inventory Allocation Engine</div>
-            <div class="proj-desc">
-              Enterprise-grade .NET 8 Inventory Management System built on
-              Clean Architecture and DDD. Implements advanced multi-warehouse
-              allocation logic, full stock-movement audit trails, and automated
-              low-stock analytics with reorder threshold alerts. CQRS via
-              MediatR and health checks for API and DB connectivity.
-            </div>
-            <div class="proj-tech">
-              <span class="t-pill">.NET 8</span
-              ><span class="t-pill">Clean Arch</span
-              ><span class="t-pill">CQRS</span
-              ><span class="t-pill">EF Core</span
-              ><span class="t-pill">Serilog</span>
-            </div>
-          </div>
-
-          <!-- ── NEW: Observability & Audit System ── -->
-          <div class="proj-card rv d2" data-cat="net">
-            <div class="proj-head">
-              <span class="proj-icon">🔭</span>
-              <div class="proj-links">
-                
-                  href="https://github.com/AhmedFarouk04/Observability-Audit-System"
-                  class="proj-link"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="proj-cat c-net">.NET · Observability</div>
-            <div class="proj-name">Observability & Audit System</div>
-            <div class="proj-desc">
-              Production-grade monitoring and auditing layer for .NET 8
-              applications. Custom middleware captures every HTTP request, user
-              action, IP, and duration. Real-time latency metrics (P50/P95/P99),
-              error-rate tracking, CSV audit export, and health checks—all
-              containerized via Docker Compose with SQL Server 2022.
-            </div>
-            <div class="proj-tech">
-              <span class="t-pill">.NET 8</span
-              ><span class="t-pill">EF Core</span
-              ><span class="t-pill">Docker</span
-              ><span class="t-pill">Health Checks</span
-              ><span class="t-pill">Custom Middleware</span>
-            </div>
-          </div>
-
-          <!-- ── NEW: AgencyOps SaaS ── -->
-          <div class="proj-card rv" data-cat="net">
-            <div class="proj-head">
-              <span class="proj-icon">🏢</span>
-              <div class="proj-links">
-                
-                  href="https://github.com/AhmedFarouk04/AgencyOps-SaaS"
-                  class="proj-link"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-            <div class="proj-cat c-net">.NET · SaaS · Modular Monolith</div>
-            <div class="proj-name">AgencyOps SaaS – Agency Operations Platform</div>
-            <div class="proj-desc">
-              Production-grade modular monolith for real-world agency operations
-              covering project delivery, client approval workflows, and
-              approval-triggered billing. Nine bounded-context modules (Identity,
-              Projects, Approvals, Billing, Notifications, Reporting, Audit…)
-              communicate via in-process integration events. Implements
-              multi-tenancy, RBAC, optimistic concurrency, and queryable audit
-              logs—all backed by integration tests on real business flows.
-            </div>
-            <div class="proj-tech">
-              <span class="t-pill">.NET 8</span
-              ><span class="t-pill">DDD</span
-              ><span class="t-pill">CQRS</span
-              ><span class="t-pill">Multi-Tenancy</span
-              ><span class="t-pill">Integration Events</span>
-            </div>
-          </div>
-
+          <!-- Scrow_Code -->
           <div class="proj-card rv d1" data-cat="node">
             <div class="proj-head">
               <span class="proj-icon">👥</span>
@@ -735,11 +739,12 @@
             </div>
           </div>
 
+          <!-- EduCore API -->
           <div class="proj-card rv d2" data-cat="node">
             <div class="proj-head">
               <span class="proj-icon">🎓</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/EduCore-API"
                   class="proj-link"
                   target="_blank"
@@ -761,11 +766,12 @@
             </div>
           </div>
 
+          <!-- Fraud Detection -->
           <div class="proj-card rv" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">🕵️</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/FraudDetectionSystem"
                   class="proj-link"
                   target="_blank"
@@ -786,11 +792,12 @@
             </div>
           </div>
 
+          <!-- Smart City -->
           <div class="proj-card rv d1" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">🏙️</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/SmartCity-OS-Simulation"
                   class="proj-link"
                   target="_blank"
@@ -807,16 +814,17 @@
             </div>
             <div class="proj-tech">
               <span class="t-pill">C# .NET 8</span
-              ><span class="t-pill">Events & Delegates</span
+              ><span class="t-pill">Events &amp; Delegates</span
               ><span class="t-pill">xUnit</span>
             </div>
           </div>
 
+          <!-- LibroCore -->
           <div class="proj-card rv d2" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">📚</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/LibroCore-Management-System"
                   class="proj-link"
                   target="_blank"
@@ -827,9 +835,9 @@
             <div class="proj-cat c-oop">C# OOP · Systems</div>
             <div class="proj-name">Library Management System</div>
             <div class="proj-desc">
-              Professional library system with SOLID principles. Fine & penalty
-              system, reservation with auto-notifications, book recommendation
-              engine, and ratings.
+              Professional library system with SOLID principles. Fine &amp;
+              penalty system, reservation with auto-notifications, book
+              recommendation engine, and ratings.
             </div>
             <div class="proj-tech">
               <span class="t-pill">C#</span><span class="t-pill">SOLID</span
@@ -837,11 +845,12 @@
             </div>
           </div>
 
+          <!-- EduCore System -->
           <div class="proj-card rv" data-cat="oop">
             <div class="proj-head">
               <span class="proj-icon">🏫</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/EduCore-System"
                   class="proj-link"
                   target="_blank"
@@ -863,11 +872,12 @@
             </div>
           </div>
 
+          <!-- SharpTube -->
           <div class="proj-card rv d1" data-cat="net oop">
             <div class="proj-head">
               <span class="proj-icon">⬇️</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/SharpTube-Downloader"
                   class="proj-link"
                   target="_blank"
@@ -888,11 +898,12 @@
             </div>
           </div>
 
+          <!-- EvalCore -->
           <div class="proj-card rv d2" data-cat="net oop">
             <div class="proj-head">
               <span class="proj-icon">🧮</span>
               <div class="proj-links">
-                
+                <a
                   href="https://github.com/AhmedFarouk04/EvalCore"
                   class="proj-link"
                   target="_blank"
